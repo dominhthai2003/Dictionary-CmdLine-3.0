@@ -1,0 +1,19 @@
+No   |English            |Vietnamese                             
+1    |Hello              |Xin chào                               
+2    |Goodbye            |Tạm biệt                               
+3    |House              |Ngôi nhà                               
+4    |School             |Trường học                             
+5    |Apple              |Quả táo                                
+6    |Egg                |Trứng                                  
+7    |Sugar              |Đường                                  
+8    |Mother             |Mẹ                                     
+9    |Father             |Bố                                     
+10   |Family             |Gia đình                               
+11   |Happy              |Vui vẻ                                 
+12   |Hot                |Nóng                                   
+13   |Humid              |Ẩm                                     
+14   |Chicken            |Con gà                                 
+15   |Dog                |Con chó                                
+16   |Cat                |Con mèo                                
+17   |Human              |Con người                              
+18   |Cow                |Con bò                                 

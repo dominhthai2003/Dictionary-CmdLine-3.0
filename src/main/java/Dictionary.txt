@@ -1,0 +1,18 @@
+Hello   Xin chào
+Goodbye Tạm biệt
+House   Ngôi nhà
+School  Trường học
+Apple	Quả táo
+Egg	Trứng
+Sugar	Đường
+Mother	Mẹ
+Father	Bố
+Family	Gia đình
+Happy   Vui vẻ
+Hot Nóng
+Humid   Ẩm
+Chicken Con gà
+Dog Con chó
+Cat Con mèo
+Human   Con người
+Cow Con bò
