@@ -5,13 +5,15 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 public class DictionaryManagement extends Dictionary{
+    protected DictionaryManagement() {}
+
     /**
      * Insert n words into the dictionary.
      * 1st line: number of words to be added.
      * 2nd line: target word. 3rd line: definition.
      * ...
      */
-    public static void insertFromCommandline() {
+    public void insertFromCommandline() {
         Scanner sc = new Scanner(System.in);
         int numberOfWords = sc.nextInt();
         sc.nextLine(); //to clear the input for subsequent
@@ -25,7 +27,7 @@ public class DictionaryManagement extends Dictionary{
     /**
      * Insert words from src/main/java/Dictionary.txt into word list.
      */
-    public static void insertFromFile() {
+    public void insertFromFile() {
         File input = new File("src/main/java/Dictionary.txt");
         try {
             Scanner sc = new Scanner(input);
@@ -46,7 +48,7 @@ public class DictionaryManagement extends Dictionary{
      * The first letter of the word must be capitalized.
      * Print out the word and definition similar to Word.toString().
      */
-    public static void dictionaryLookup() {
+    public void dictionaryLookup() {
         System.out.print("Enter the word that you want to look up: ");
         Scanner sc = new Scanner(System.in);
         String searchWord = sc.next();
@@ -61,7 +63,7 @@ public class DictionaryManagement extends Dictionary{
     /**
      * Remove a word from the dictionary.
      */
-    public static void dictionaryRemove() {
+    public void dictionaryRemove() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the word that you want to remove: ");
         String word = sc.next();
@@ -78,7 +80,7 @@ public class DictionaryManagement extends Dictionary{
     /**
      * change the definition of a word
      */
-    public static void appendDefinition() {
+    public void appendDefinition() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the word that you want to change the definition: ");
         String word = sc.next();
@@ -104,7 +106,7 @@ public class DictionaryManagement extends Dictionary{
      * 2    |<targetWord2>      |<definition2>
      * 3    |<targetWord3>      |<definition3>
      */
-    public static void dictionaryExportToFile() {
+    public void dictionaryExportToFile() {
         try {
             File output = new File("src/main/java/Export.txt");
             boolean createFile = output.createNewFile();
@@ -122,7 +124,6 @@ public class DictionaryManagement extends Dictionary{
             writer.close();
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
-            return;
         }
     }
 }

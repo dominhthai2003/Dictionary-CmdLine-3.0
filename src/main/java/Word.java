@@ -1,5 +1,5 @@
 public class Word {
-    private String targetWord;
+    private final String targetWord;
     private String definition;
 
     public Word(String targetWord, String definition) {
