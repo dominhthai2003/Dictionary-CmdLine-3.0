@@ -3,11 +3,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public class DictionaryCommandline extends DictionaryManagement{
+    private static DictionaryCommandline dictionaryCommandline = new DictionaryCommandline();
+
     private DictionaryCommandline() {}
 
-    public static DictionaryCommandline createDictionaryCommandLine() {
-        DictionaryCommandline dcl = new DictionaryCommandline();
-        return dcl;
+    public static DictionaryCommandline getInstance() {
+        return dictionaryCommandline;
     }
 
     /**

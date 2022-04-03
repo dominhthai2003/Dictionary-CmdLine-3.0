@@ -1,6 +1,6 @@
 public class Test {
     public static void main(String[] args) {
-        DictionaryCommandline dictionaryCommandLine = DictionaryCommandline.createDictionaryCommandLine();
+        DictionaryCommandline dictionaryCommandLine = DictionaryCommandline.getInstance();
         dictionaryCommandLine.dictionaryAdvanced();
     }
 }
